@@ -1,6 +1,33 @@
-input:focus-visible,
-label:focus-visible,
-textarea:focus-visible {
-	outline: 2px solid crimson;
-	border-radius: 3px;
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2rem;
+}
+
+header img {
+	width: 100px;
+	height: auto;
+	display: block;
+}
+
+.menu {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+}
+
+.menu ul {
+	display: flex;
+	list-style: none;
+	gap: 4rem;
+}
+
+.menu a {
+	text-decoration: none;
+	font-size: 1rem;
+}
+
+.order-buttonn {
+	font-size: 1rem;
 }
