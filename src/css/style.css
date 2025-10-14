@@ -1,15 +1,15 @@
 /* navbar */
 header {
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
 	align-items: center;
-	gap: 2rem;
+	gap: 1rem;
 	flex-wrap: wrap;
 	box-sizing: border-box;
 }
 
 header img {
-	width: 100px;
+	width: 80px;
 	height: auto;
 	display: block;
 }
@@ -18,12 +18,13 @@ header img {
 	flex: 1;
 	display: flex;
 	justify-content: center;
+	width: 100%;
 }
 
 .menu ul {
 	display: flex;
 	list-style: none;
-	gap: 4rem;
+	gap: 2rem;
 }
 
 .menu a {
@@ -32,23 +33,22 @@ header img {
 }
 
 .order-button {
-	font-size: 1rem;
+	font-size: 0.9rem;
+	padding: 0.5rem 1rem;
 }
 
-/* card */
-.card-container {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	gap: 1rem;
-	justify-content: center;
+/* card-offer */
+.offer {
 	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 1rem;
 	box-sizing: border-box;
+	padding: 0 1rem;
 }
 
 .card {
-	max-width: 30%;
-	min-width: 250px;
+	width: 100%;
 	border: 1px solid black;
 	border-radius: 20%;
 	display: flex;
@@ -65,7 +65,11 @@ header img {
 	border-radius: 20% 20% 0 0;
 }
 
-.card h1,
+.card h1 {
+	font-size: large;
+	text-align: center;
+}
+
 .card p {
 	font-size: 1rem;
 	text-align: center;
@@ -77,24 +81,28 @@ header img {
 }
 
 /* responsivity */
-@media (max-width: 600px) {
-	header {
-		flex-direction: column;
-		align-items: center;
-		gap: 1rem;
+
+@media (min-width: 600px) {
+	.offer {
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		padding: 2rem;
 	}
 
-	.menu {
-		justify-content: center;
-		width: 100%;
+	header {
+		flex-direction: row;
+		justify-content: space-between;
+		gap: 2rem;
 	}
 
 	header img {
-		width: 80px;
+		width: 100px;
+	}
+
+	.menu ul {
+		gap: 4rem;
 	}
 
 	.order-button {
-		font-size: 0.9rem;
-		padding: 0.5rem 1rem;
+		font-size: 1rem;
 	}
 }
