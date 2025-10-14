@@ -1,3 +1,4 @@
+/* design tokens */
 :root {
 	--space-1: 4px;
 	--btn-font-size: 16px;
@@ -11,8 +12,12 @@
 	--btn-secondary-bg: black;
 	--btn-secondary-color: white;
 	--btn-secondary-border: blue;
+
+	--section-padding: 1rem;
+	--section-maxwidth: 100%;
 }
 
+/* button primary and secondary */
 .btn {
 	font-size: var(--btn-font-size);
 	padding: var(--btn-padding);
@@ -30,6 +35,11 @@
 	background-color: var(--btn-secondary-bg);
 	color: var(--btn-secondary-color);
 	border-color: var(--btn-secondary-border);
+}
+/* section */
+.section {
+	padding: var(--section-padding);
+	max-width: var(--section-maxwidth);
 }
 
 /* navbar */
