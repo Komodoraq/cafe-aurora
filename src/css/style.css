@@ -16,6 +16,11 @@
 	--section-padding: 1rem;
 	--section-maxwidth: 100%;
 }
+/* all */
+button:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 
 /* button primary and secondary */
 .btn {
@@ -74,6 +79,10 @@ header img {
 .menu a {
 	text-decoration: none;
 	font-size: 1rem;
+	color: black;
+}
+.menu a:hover {
+	color: gray;
 }
 
 .order-button {
@@ -102,6 +111,10 @@ header img {
 	box-sizing: border-box;
 }
 
+.card:hover {
+	box-shadow: 0 0 15px black;
+}
+
 .card img {
 	width: 100%;
 	height: auto;
@@ -122,6 +135,13 @@ header img {
 .card button {
 	align-self: center;
 	border-radius: 1rem;
+}
+/* contact */
+.contact input:hover {
+	box-shadow: 0 0 5px black;
+}
+.contact textarea:hover {
+	box-shadow: 0 0 5px black;
 }
 
 /* responsivity */
