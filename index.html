@@ -50,7 +50,8 @@
 
 					<div class="form-group">
 						<label for="email">Email</label>
-						<input type="email" id="email" name="email" required />
+						<input type="email" id="email" name="email" aria-describedby="email-error" required />
+						<div id="email-error" style="color: red">Wprowadź poprawny adres email</div>
 					</div>
 
 					<div class="form-group">
@@ -59,9 +60,12 @@
 					</div>
 					<button type="submit">Wyślij</button>
 				</form>
-				<button class="btn btn--primary">Primary Button</button>
-				<button class="btn btn--secondary">Secondary Button</button>
 			</section>
+			<button class="btn btn--contained">Medium Contained</button>
+			<button class="btn btn--small">Small</button>
+			<button class="btn btn--big">Big</button>
+			<button class="btn btn--outlined">Outlined</button>
+			<button class="btn btn--ghost btn--big">Ghost big</button>
 		</main>
 		<footer>
 			<p>&copy; 2025 Cafe Aurora. Wszystkie prawa zastrzeżone.</p>

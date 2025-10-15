@@ -1,25 +1,15 @@
 /* CSS variables */
 :root {
 	--space-1: 4px;
-	--btn-font-size: 16px;
-	--btn-padding: 10px 20px;
-	--btn-border-radius: 6px;
-
-	--btn-primary-bg: white;
-	--btn-primary-color: black;
-	--btn-primary-border: red;
-
-	--btn-secondary-bg: black;
-	--btn-secondary-color: white;
-	--btn-secondary-border: blue;
 
 	--section-padding: 1rem;
 	--section-maxwidth: 100%;
 }
 /* all */
-button:hover {
-	transform: translateY(-2px);
-	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+.btn:hover {
+	background: linear-gradient(to right, blueviolet, blueviolet);
+	color: antiquewhite;
 }
 
 /* Rodzaje buttonów do zrobienia */
@@ -28,23 +18,48 @@ button:hover {
 
 /* button primary and secondary */
 .btn {
-	font-size: var(--btn-font-size);
-	padding: var(--btn-padding);
-	border-radius: var(--btn-border-radius);
-	border: 1px solid;
+	border-radius: 8px;
+
+	font-size: 16px;
+	padding: 7px 12px;
+
+	background: linear-gradient(to right, blueviolet, violet);
+	transition: all 0.3s ease-in-out;
+	color: black;
 }
 
-.btn--primary {
-	background-color: var(--btn-primary-bg);
-	color: var(--btn-primary-color);
-	border-color: var(--btn-primary-border);
+.btn--small {
+	font-size: 14px;
+	padding: 5px 8px;
 }
 
-.btn--secondary {
-	background-color: var(--btn-secondary-bg);
-	color: var(--btn-secondary-color);
-	border-color: var(--btn-secondary-border);
+.btn--big {
+	font-size: 24px;
+	padding: 10px 16px;
 }
+
+.btn--outlined:hover {
+	background: transparent;
+	border-color: blueviolet;
+	color: blueviolet;
+}
+
+.btn--outlined {
+	background: transparent;
+	color: black;
+}
+
+.btn--ghost:hover {
+	background: rgb(229, 200, 255);
+	color: black;
+}
+
+.btn--ghost {
+	background: transparent;
+	color: blueviolet;
+	border: transparent;
+}
+
 /* section */
 .section {
 	padding: var(--section-padding);
