@@ -6,66 +6,113 @@
 		<title>Cafe Aurora</title>
 		<link rel="stylesheet" href="src/css/reset.css" />
 		<link rel="stylesheet" href="src/css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Mono:wght@100..900&display=swap"
+			rel="stylesheet" />
 	</head>
 	<body>
 		<header>
 			<img src="src/assets/logo.png" alt="Logo firmy" />
+
 			<nav class="menu">
 				<ul>
-					<li><a href="">Oferta</a></li>
-					<li><a href="">Opinie</a></li>
-					<li><a href="">Kontakt</a></li>
+					<li><a class="btn btn--ghost" href="#oferta">Oferta</a></li>
+					<li><a class="btn btn--ghost" href="#opinie">Opinie</a></li>
+					<li><a class="btn btn--ghost" href="#kontakt">Kontakt</a></li>
 				</ul>
 			</nav>
-			<button class="order-button" type="submit">Zamów</button>
+
+			<a href="https://streamable.com/688ek3" target="_blank" class="btn btn--ghost">Zamów</a>
 		</header>
 		<main>
-			<section class="reviews"></section>
+			<section class="hero">
+				<img src="src/assets/cofee_pack.png" alt="paczka z kawą" />
+				<h1>Aurora Cafe to miejsce, gdzie rzemieślnicza kawa, domowe wypieki i spokojna atmosfera spotykają się w samym sercu miasta.</h1>
+			</section>
+			<h2 id="oferta">Oferta</h2>
 			<section class="offer">
 				<div class="card">
-					<img src="src/assets/espresso.png" alt="Karta z espresso" />
-					<h1>Espresso</h1>
-					<p>Mała, mocna kawa</p>
-					<button>Więcej</button>
+					<img src="src/assets/espresso.png" alt="Espresso" loading="lazy" />
+					<p>espresso</p>
+					<button class="btn">Zamów</button>
 				</div>
 				<div class="card">
-					<img src="src/assets/espresso.png" alt="Karta z doppio" />
-					<h1>Doppio</h1>
-					<p>Podwójne espresso</p>
-					<button>Więcej</button>
+					<img src="src/assets/caffe_crema.png" alt="Caffe crema" loading="lazy" />
+					<p>caffe crema</p>
+					<button class="btn">Zamów</button>
 				</div>
 				<div class="card">
-					<img src="src/assets/espresso.png" alt="Karta z americano" />
-					<h1>Americano</h1>
-					<p>Czarna kawa o małej mocy</p>
-					<button>Więcej</button>
+					<img src="src/assets/machiato.png" alt="Latte macchiato" loading="lazy" />
+					<p>latte macchiato</p>
+					<button class="btn">Zamów</button>
 				</div>
 			</section>
+			<h3 id="opinie">Opinie</h3>
+			<section class="reviews">
+				<div class="review-container">
+					<p>Najlepsza kawa w mieście! Cudowny klimat i przemiła obsługa. - Anna Wójcik</p>
+					<div class="stars">
+						<span>★</span>
+						<span>★</span>
+						<span>★</span>
+						<span>★</span>
+						<span>☆</span>
+					</div>
+				</div>
+				<div class="review-container">
+					<p>Bardzo przytulne miejsce. Idealne na spokojne popołudnie z książką. - Marek Zaleski</p>
+					<div class="stars">
+						<span>★</span>
+						<span>★</span>
+						<span>★</span>
+						<span>★</span>
+						<span>★</span>
+					</div>
+				</div>
+				<div class="review-container">
+					<p>Kawa super, ale było dość głośno i trudno o wolny stolik. - Katarzyna Nowak</p>
+					<div class="stars">
+						<span>★</span>
+						<span>★</span>
+						<span>★</span>
+						<span>☆</span>
+						<span>☆</span>
+					</div>
+				</div>
+			</section>
+			<h4 id="kontakt">Kontakt</h4>
 			<section class="contact">
 				<form>
-					<div class="form-group">
-						<label for="first-name">Imie</label>
-						<input type="text" id="first-name" name="first-name" required />
-					</div>
-
-					<div class="form-group">
-						<label for="email">Email</label>
-						<input type="email" id="email" name="email" aria-describedby="email-error" required />
-						<div id="email-error" style="color: red">Wprowadź poprawny adres email</div>
-					</div>
-
-					<div class="form-group">
-						<label for="message">Wiadomość</label>
-						<textarea id="message" name="message" placeholder="Wpisz swoją wiadomość:" required></textarea>
-					</div>
-					<button type="submit">Wyślij</button>
+					<p>
+						<label for="name">Imie:</label>
+						<input type="text" id="name" name="user_name" />
+					</p>
+					<p>
+						<label for="mail">Email:</label>
+						<input type="email" id="mail" name="user_email" />
+					</p>
+					<p>
+						<label for="msg">Wiadomość:</label>
+						<textarea id="msg" name="user_message"></textarea>
+					</p>
+					<button class="btn btn-outlined" type="submit">Wyślij</button>
 				</form>
+				<pre>
+					Nazwa: Aurora Cafe Adres: ul. Słoneczna 12, 15-001 Białystok 
+					Telefon: +48 85 412 34 56 
+					E-mail: kontakt@auroracafe.pl 
+					Godziny otwarcia: 
+					Pon.-Pt.: 07:30-20:00 
+					Sob.: 08:00-20:00 
+					Niedz.: 09:00-18:00
+				</pre
+				>
 			</section>
-			<button class="btn btn--contained">Medium Contained</button>
-			<button class="btn btn--small">Small</button>
-			<button class="btn btn--big">Big</button>
-			<button class="btn btn--outlined">Outlined</button>
-			<button class="btn btn--ghost btn--big">Ghost big</button>
 		</main>
 		<footer>
 			<p>&copy; 2025 Cafe Aurora. Wszystkie prawa zastrzeżone.</p>
