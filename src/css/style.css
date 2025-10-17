@@ -2,62 +2,15 @@
 :root {
 	--space-1: 4px;
 
+	--color-lightorange: #f1e9d9;
+	--color-pastel-gray-orange: #d8b38d;
+
 	--section-padding: 1rem;
 	--section-maxwidth: 100%;
 }
-/* all */
-
-.btn:hover {
-	background: linear-gradient(to right, blueviolet, blueviolet);
-	color: antiquewhite;
-}
-
-/* Rodzaje buttonów do zrobienia */
-/* Rozmiary: small, medium (domyślne), big (rozmiar czcionki, padding) */
-/* Variations: contained (domyślne), outlined, ghost (background, border, text color) */
-
-/* button primary and secondary */
-.btn {
-	border-radius: 8px;
-
-	font-size: 16px;
-	padding: 7px 12px;
-
-	background: linear-gradient(to right, blueviolet, violet);
-	transition: all 0.3s ease-in-out;
-	color: black;
-}
-
-.btn--small {
-	font-size: 14px;
-	padding: 5px 8px;
-}
-
-.btn--big {
-	font-size: 24px;
-	padding: 10px 16px;
-}
-
-.btn--outlined:hover {
-	background: transparent;
-	border-color: blueviolet;
-	color: blueviolet;
-}
-
-.btn--outlined {
-	background: transparent;
-	color: black;
-}
-
-.btn--ghost:hover {
-	background: rgb(229, 200, 255);
-	color: black;
-}
-
-.btn--ghost {
-	background: transparent;
-	color: blueviolet;
-	border: transparent;
+/* semantics */
+body {
+	background-color: var(--color-lightorange);
 }
 
 /* section */
@@ -107,70 +60,6 @@ header img {
 .order-button {
 	font-size: 0.9rem;
 	padding: 0.5rem 1rem;
-}
-
-/* card-offer */
-.offer {
-	width: 100%;
-	display: grid;
-	grid-template-columns: repeat(1, minmax(200px, 1fr));
-	gap: 1rem;
-	box-sizing: border-box;
-	padding: 0 1rem;
-}
-
-.card {
-	width: 100%;
-	border: 1px solid black;
-	border-radius: 20%;
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-	align-items: center;
-	box-sizing: border-box;
-}
-
-.card:hover {
-	box-shadow: 0 0 15px black;
-}
-
-.card img {
-	width: 100%;
-	height: auto;
-	display: block;
-	border-radius: 20% 20% 0 0;
-}
-
-.card h1 {
-	font-size: large;
-	text-align: center;
-}
-
-.card p {
-	font-size: 1rem;
-	text-align: center;
-}
-
-.card button {
-	align-self: center;
-	border-radius: 1rem;
-}
-/* contact */
-.form-group {
-	display: flex;
-	justify-content: center;
-}
-.contact {
-	border: 1px solid black;
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-}
-.contact input:hover {
-	box-shadow: 0 0 5px black;
-}
-.contact textarea:hover {
-	box-shadow: 0 0 5px black;
 }
 
 /* responsivity */
