@@ -9,6 +9,11 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Mono:wght@100..900&display=swap"
+			rel="stylesheet" />
 	</head>
 	<body>
 		<header>
@@ -29,9 +34,73 @@
 				<img src="src/assets/cofee_pack.png" alt="paczka z kawą" />
 				<h1>Aurora Cafe to miejsce, gdzie rzemieślnicza kawa, domowe wypieki i spokojna atmosfera spotykają się w samym sercu miasta.</h1>
 			</section>
-			<section class="reviews"></section>
-			<section class="offer"></section>
-			<section class="contact"></section>
+			<h2>Oferta</h2>
+			<section class="offer">
+				<div class="card">
+					<img src="src/assets/espresso.png" alt="Espresso" loading="lazy" />
+					<p>espresso</p>
+					<button class="btn">Zamów</button>
+				</div>
+				<div class="card">
+					<img src="src/assets/caffe_crema.png" alt="Caffe crema" loading="lazy" />
+					<p>caffe crema</p>
+					<button class="btn">Zamów</button>
+				</div>
+				<div class="card">
+					<img src="src/assets/machiato.png" alt="Latte macchiato" loading="lazy" />
+					<p>latte macchiato</p>
+					<button class="btn">Zamów</button>
+				</div>
+			</section>
+			<h3>Opinie</h3>
+			<section class="reviews">
+				<div class="review-container">
+					<p>Najlepsza kawa w mieście! Cudowny klimat i przemiła obsługa. - Anna Wójcik</p>
+					<div class="stars">
+						<span>★</span>
+						<span>★</span>
+						<span>★</span>
+						<span>★</span>
+						<span>☆</span>
+					</div>
+				</div>
+				<div class="review-container">
+					<p>Bardzo przytulne miejsce. Idealne na spokojne popołudnie z książką. - Marek Zaleski</p>
+					<div class="stars">
+						<span>★</span>
+						<span>★</span>
+						<span>★</span>
+						<span>★</span>
+						<span>★</span>
+					</div>
+				</div>
+				<div class="review-container">
+					<p>Kawa super, ale było dość głośno i trudno o wolny stolik. - Katarzyna Nowak</p>
+					<div class="stars">
+						<span>★</span>
+						<span>★</span>
+						<span>★</span>
+						<span>☆</span>
+						<span>☆</span>
+					</div>
+				</div>
+			</section>
+			<section class="contact">
+				<form>
+					<p>
+						<label for="name">Name:</label>
+						<input type="text" id="name" name="user_name" />
+					</p>
+					<p>
+						<label for="mail">Email:</label>
+						<input type="email" id="mail" name="user_email" />
+					</p>
+					<p>
+						<label for="msg">Message:</label>
+						<textarea id="msg" name="user_message"></textarea>
+					</p>
+				</form>
+			</section>
 		</main>
 		<footer>
 			<p>&copy; 2025 Cafe Aurora. Wszystkie prawa zastrzeżone.</p>
