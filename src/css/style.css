@@ -94,6 +94,27 @@ header img {
 	color: black;
 }
 
+h1 {
+	font-size: 32px;
+}
+
+.hero {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: "Caveat Brush";
+	font-weight: 700;
+	font-style: normal;
+	margin: 0 5vh;
+}
+
+.hero img {
+	width: auto;
+	height: 30vh;
+	display: block;
+}
+
 /* responsivity */
 
 @media (min-width: 600px) {
@@ -118,6 +139,18 @@ header img {
 
 	.order-button {
 		font-size: 1rem;
+	}
+	h1 {
+		font-size: 48px;
+	}
+
+	.hero {
+		flex-direction: row;
+		margin: 0 10vh;
+	}
+
+	.hero img {
+		height: 50vh;
 	}
 }
 
